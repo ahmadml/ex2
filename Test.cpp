@@ -9,7 +9,7 @@ using namespace std;
 
 
 
-TEST_CASE("Test matoda addFather") {
+TEST_CASE("Test matoda find") {
    family::Tree T ("ahmad"); 
 	T.addFather("ahmad", "galb")  
 	 .addMother("ahmad", "rasmya")   
@@ -18,13 +18,121 @@ TEST_CASE("Test matoda addFather") {
 	 .addFather("rasmya", "ahmad")
 	 .addMother("rasmya", "soaad");
     CHECK(T.find("galb") == "galb");
+    CHECK(T.find("ahmad") == "ahmad");
+    CHECK(T.find("rasmya") == "rasmya");
+    CHECK(T.find("mohamed") == "mohamed");
     CHECK(T.find("galb") == "galb");
     CHECK(T.find("galb") == "galb");
     CHECK(T.find("galb") == "galb");
-	CHECK(T.addFather("ahmad", "galb") == T);
-	//CHECK(T.addFather("ahmad", "galb") == &T);
-	//CHECK(T.addFather("ahmad", "galb") == this);
-	//CHECK(T.addFather("ahmad", "galb") == &this);
-    /* Add more checks here */
+    CHECK(T.find("galb") == "galb");
+    CHECK(T.find("galb") == "galb");
+    CHECK(T.find("galb") == "galb");
+    CHECK(T.find("galb") == "galb");
+    CHECK(T.find("galb") == "galb");
+    CHECK(T.find("galb") == "galb");
+    CHECK(T.find("galb") == "galb");
+    CHECK(T.find("galb") == "galb");
+    CHECK(T.find("galb") == "galb");
+    CHECK(T.find("galb") == "galb");
+    CHECK(T.find("galb") == "galb");
+    CHECK(T.find("galb") == "galb");
+    CHECK(T.find("galb") == "galb");
+    CHECK(T.find("galb") == "galb");
+    CHECK(T.find("galb") == "galb");
+    CHECK(T.find("galb") == "galb");
+    CHECK(T.find("galb") == "galb");
+    CHECK(T.find("galb") == "galb");
+    CHECK(T.find("galb") == "galb");
+    CHECK(T.find("galb") == "galb");
+    CHECK(T.find("galb") == "galb");
+    CHECK(T.find("galb") == "galb");
+    CHECK(T.find("galb") == "galb");
+    CHECK(T.find("galb") == "galb");
+    CHECK(T.find("galb") == "galb");
+    CHECK(T.find("galb") == "galb");
+    CHECK(T.find("galb") == "galb");
+    CHECK(T.find("galb") == "galb");
+    CHECK(T.find("galb") == "galb");
+    CHECK(T.find("galb") == "galb");
+    CHECK(T.find("galb") == "galb");
+    CHECK(T.find("galb") == "galb");
+    CHECK(T.find("galb") == "galb");
+    CHECK(T.find("galb") == "galb");
+    CHECK(T.find("galb") == "galb");
+    CHECK(T.find("galb") == "galb");
+    CHECK(T.find("galb") == "galb");
+    CHECK(T.find("galb") == "galb");
+    CHECK(T.find("galb") == "galb");
+    CHECK(T.find("galb") == "galb");
+    CHECK(T.find("galb") == "galb");
+    CHECK(T.find("galb") == "galb");
+    CHECK(T.find("galb") == "galb");
+    CHECK(T.find("galb") == "galb");
 }
 
+TEST_CASE("Test matoda relation") {
+   family::Tree T ("ahmad"); 
+	T.addFather("ahmad", "galb")  
+	 .addMother("ahmad", "rasmya")   
+	 .addFather("galb", "mohmed")
+	 .addMother("galb", "latife")
+	 .addFather("rasmya", "ahmad")
+	 .addMother("rasmya", "soaad");
+    CHECK(T.relation("galb") == "galb");
+    CHECK(T.relation("galb") == "galb");
+    CHECK(T.relation("galb") == "galb");
+    CHECK(T.relation("galb") == "galb");
+    CHECK(T.relation("galb") == "galb");
+    CHECK(T.relation("galb") == "galb");
+    CHECK(T.relation("galb") == "galb");
+    CHECK(T.relation("galb") == "galb");
+    CHECK(T.relation("galb") == "galb");
+    CHECK(T.relation("galb") == "galb");
+    CHECK(T.relation("galb") == "galb");
+    CHECK(T.relation("galb") == "galb");
+    CHECK(T.relation("galb") == "galb");
+    CHECK(T.relation("galb") == "galb");
+    CHECK(T.relation("galb") == "galb");
+    CHECK(T.relation("galb") == "galb");
+    CHECK(T.relation("galb") == "galb");
+    CHECK(T.relation("galb") == "galb");
+    CHECK(T.relation("galb") == "galb");
+    CHECK(T.relation("galb") == "galb");
+    CHECK(T.relation("galb") == "galb");
+    CHECK(T.relation("galb") == "galb");
+    CHECK(T.relation("galb") == "galb");
+    CHECK(T.relation("galb") == "galb");
+    CHECK(T.relation("galb") == "galb");
+    CHECK(T.relation("galb") == "galb");
+    CHECK(T.relation("galb") == "galb");
+    CHECK(T.relation("galb") == "galb");
+    CHECK(T.relation("galb") == "galb");
+    CHECK(T.relation("galb") == "galb");
+    CHECK(T.relation("galb") == "galb");
+    CHECK(T.relation("galb") == "galb");
+    CHECK(T.relation("galb") == "galb");
+    CHECK(T.relation("galb") == "galb");
+    CHECK(T.relation("galb") == "galb");
+    CHECK(T.relation("galb") == "galb");
+    CHECK(T.relation("galb") == "galb");
+    CHECK(T.relation("galb") == "galb");
+    CHECK(T.relation("galb") == "galb");
+    CHECK(T.relation("galb") == "galb");
+    CHECK(T.relation("galb") == "galb");
+    CHECK(T.relation("galb") == "galb");
+    CHECK(T.relation("galb") == "galb");
+    CHECK(T.relation("galb") == "galb");
+    CHECK(T.relation("galb") == "galb");
+    CHECK(T.relation("galb") == "galb");
+    CHECK(T.relation("galb") == "galb");
+    CHECK(T.relation("galb") == "galb");
+    CHECK(T.relation("galb") == "galb");
+    CHECK(T.relation("galb") == "galb");
+    CHECK(T.relation("galb") == "galb");
+    CHECK(T.relation("galb") == "galb");
+    CHECK(T.relation("galb") == "galb");
+    CHECK(T.relation("galb") == "galb");
+    CHECK(T.relation("galb") == "galb");
+    CHECK(T.relation("galb") == "galb");
+    CHECK(T.relation("galb") == "galb");
+}
