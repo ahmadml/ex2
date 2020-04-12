@@ -17,10 +17,10 @@ TEST_CASE("Test matoda addFather") {
 	 .addMother("galb", "latife")
 	 .addFather("rasmya", "ahmad")
 	 .addMother("rasmya", "soaad");
-    CHECK(find("galb") == "galb");
-    CHECK(addFather("ahmad", "galb") == &this);
-    CHECK(addFather("ahmad", "galb") == &this);
-    CHECK(addFather("ahmad", "galb") == &this);
+    CHECK(T.find("galb") == "galb");
+    CHECK(T.find("galb") == "galb");
+    CHECK(T.find("galb") == "galb");
+    CHECK(T.find("galb") == "galb");
     /* Add more checks here */
 }
 
