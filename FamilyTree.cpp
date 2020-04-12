@@ -3,11 +3,11 @@ using namespace family;
 
 
 Tree Tree::addFather(string person, string name){
-    
+    return *this;
 }
 
 Tree Tree::addMother(string person, string name){
-    
+    return *this;
 }
 
 string Tree::relation(string name){
