@@ -21,6 +21,10 @@ TEST_CASE("Test matoda addFather") {
     CHECK(T.find("galb") == "galb");
     CHECK(T.find("galb") == "galb");
     CHECK(T.find("galb") == "galb");
+	CHECK(T.addFather("ahmad", "galb") == T);
+	CHECK(T.addFather("ahmad", "galb") == &T);
+	CHECK(T.addFather("ahmad", "galb") == this);
+	CHECK(T.addFather("ahmad", "galb") == &this);
     /* Add more checks here */
 }
 
